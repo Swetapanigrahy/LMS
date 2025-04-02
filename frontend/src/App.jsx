@@ -1,10 +1,14 @@
 import React from 'react'
+import { Routes , Route } from 'react-router-dom'
+import Home from './pages/student/Home';
+
 
 const App = () => {
   return (
     <div>
-      <h1 className='p-5'>hello</h1>
-      <button className='text-red-500'>click me!</button>
+     <Routes>
+     < Route path='/' element={<Home/>}/>
+     </Routes>
     </div>
   )
 }
